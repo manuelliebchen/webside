@@ -1,0 +1,6 @@
+title = "robots.txt"
+url = "/robots.txt"
+is_hidden = 0
+==
+User-agent: *
+Disallow: /backend

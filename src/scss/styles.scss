@@ -1,0 +1,65 @@
+@import "~bootswatch/dist/litera/variables";
+
+$link-hover-color:          $success;
+$link-color:                inherit;
+$link-hover-decoration:     none;
+
+$border-radius: 1rem;
+
+@import "~bootstrap-scss/bootstrap";
+@import "~bootswatch/dist/litera/bootswatch";
+
+.w-max {
+    width: max-content !important;    
+}
+
+
+body {
+  @extend .d-flex, .flex-column, .mx-auto, .p-1;
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  min-width: 360px !important;
+}
+
+h2 {
+  @extend .mb-3;
+  
+  border-bottom-style: dotted;
+  border-bottom-width: 0.1em;
+  font-variant: small-caps;
+}
+
+h3 {
+  @extend .mb-0, .h5, .font-weight-light;
+}
+
+section {
+  @extend .mt-3, .mb-3, .d-flex, .flex-column;
+}
+
+.row {
+  @extend .mx-0;
+}
+
+.content-box {
+  @extend .mt-2, .mb-1;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1em;
+}
+
+.content-line{
+  @extend .d-flex, .row, .justify-content-between;
+}
+
+.meta-information{
+  @extend .text-monospace, .small;
+  color: $secondary;
+}
+
+.box {
+  @extend .shadow, .rounded, .bg-white, .p-2;
+}
+
+.inline-link-box {
+  @extend .d-inline-flex, .border, .my-1, .p-2, .px-3, .rounded;
+}
